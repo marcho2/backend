@@ -2,7 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\Producto;
+use App\Http\Controllers\productoController;
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+Route::get('/productos', [productoController::class, 'index']);
+Route::post('/productos', [productoController::class, 'store']);
