@@ -16,20 +16,13 @@ class DatabaseSeeder extends Seeder
         Producto::create([
             'producto' => 'PC gamer',
             'precio' => 1500000,
-            'fecha_de_ingreso' => '2024-11-19',
+            'fechaIngreso' => '2024-11-19',
         ]);
     
         Producto::create([
             'producto' => 'Ejemplo',
             'precio' => 100,
-            'fecha_de_ingreso' => '2024-11-19',
+            'fechaIngreso' => '2024-11-19',
         ]);
     }
-    
-
-        //User::factory()->create([
-        //    'name' => 'Test User',
-        //    'email' => 'test@example.com',
-        //]);
-    
 }

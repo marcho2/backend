@@ -11,6 +11,6 @@ class Producto extends Model
     protected $fillable = [
         'producto',
         'precio',
-        'fecha_de_ingreso'
+        'fechaIngreso'
     ];
 }

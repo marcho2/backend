@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('producto');
             $table->integer('precio');
-            $table->date('fecha_de_ingreso');
+            $table->date('fechaIngreso');
             $table->timestamps();
         });
     }
